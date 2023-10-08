@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     var user = "user"
     var password = "password"
@@ -8,10 +8,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-    }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameLabel.text == user, passwordLabel.text == password else {
             showIssueAlert(with: "Invalid user name or password", and: "Please check your details")
