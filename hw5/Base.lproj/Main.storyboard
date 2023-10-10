@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="hw5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,11 @@
                                         <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log in"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="pw1-2c-nFJ" kind="presentation" identifier="welcomeVC" id="zrd-eg-T0F"/>
                                         </connections>
@@ -50,15 +55,15 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
                                         <connections>
-                                            <action selector="forgotUserButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceI-rd-fq3"/>
+                                            <action selector="forgotCredentials:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lB2-dV-pnx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ys-PR-gWd">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ys-PR-gWd">
                                         <rect key="frame" x="210.33333333333337" y="0.0" width="179.66666666666663" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
                                         <connections>
-                                            <action selector="forgotPassButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="CfI-u1-NGV"/>
+                                            <action selector="forgotCredentials:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcM-zb-xU8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -77,8 +82,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordLabel" destination="vbW-LK-1Jz" id="a0X-XR-vqU"/>
-                        <outlet property="userNameLabel" destination="t0q-bH-o9K" id="aw8-p4-7Ot"/>
+                        <outlet property="passwordTextField" destination="vbW-LK-1Jz" id="a0X-XR-vqU"/>
+                        <outlet property="userNameTextField" destination="t0q-bH-o9K" id="aw8-p4-7Ot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -4,11 +4,12 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    var newLabel: String!
-
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var newLabel = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome, \(newLabel ?? "")!"
+        welcomeLabel.text = "Welcome, \(newLabel)!"
     }
 }
