@@ -5,11 +5,11 @@ final class LogInViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    private var user = "user"
-    private var password = "password"
+    private let userOne = User.getUser()
+    
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard userNameTextField.text == user, passwordTextField.text == password else {
+        guard userNameTextField.text == userOne.userName, passwordTextField.text == userOne.password else {
             showIssueAlert(with: "Invalid user name or password",
                            and: "Please check your details",
                             textField: passwordTextField)
@@ -24,13 +24,31 @@ final class LogInViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
-        welcomeVC.newLabel = user
+        guard let tabBarController = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarController.viewControllers else { return}
+        
+        for viewController in viewControllers {
+            if let firstVC = viewController as? WelcomeViewController {
+                firstVC.newLabel = userOne.userName
+                firstVC.name = userOne.userInfo.name
+                firstVC.surname = userOne.userInfo.surname
+            } else if let navigationVC = viewController as? MainNavigationController {
+                if let secondVC = navigationVC.topViewController as? UserInfoViewController {
+                    secondVC.name = userOne.userInfo.name
+                    secondVC.surname = userOne.userInfo.surname
+                    secondVC.company = userOne.userInfo.company
+                    secondVC.department = userOne.userInfo.department
+                    secondVC.position = userOne.userInfo.possition
+                    secondVC.userDescription = userOne.userInfo.story
+                    secondVC.image = userOne.userInfo.image
+                }
+            } 
+        }
     }
 
 
     @IBAction func forgotCredentials(_ sender: UIButton) {
-    sender.tag == 0 ? showIssueAlert(with: "Oooops", and: "Your username is user") : showIssueAlert(with: "Ooops", and: "Your password is password")
+        sender.tag == 0 ? showIssueAlert(with: "Oooops", and: "Your username is \(userOne.userName)") : showIssueAlert(with: "Ooops", and: "Your password is \(userOne.password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

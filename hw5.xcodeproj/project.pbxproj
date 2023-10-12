@@ -14,6 +14,11 @@
 		FA9C3F8E2AD247D000BAAC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9C3F8D2AD247D000BAAC23 /* Assets.xcassets */; };
 		FA9C3F912AD247D000BAAC23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9C3F8F2AD247D000BAAC23 /* LaunchScreen.storyboard */; };
 		FA9C3F992AD2607600BAAC23 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C3F982AD2607600BAAC23 /* WelcomeViewController.swift */; };
+		FA9C3F9B2AD5EC2F00BAAC23 /* InformationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C3F9A2AD5EC2F00BAAC23 /* InformationTabBarController.swift */; };
+		FA9C3F9D2AD62DF700BAAC23 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C3F9C2AD62DF700BAAC23 /* userModel.swift */; };
+		FA9C3F9F2AD6345300BAAC23 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C3F9E2AD6345300BAAC23 /* UserInfoViewController.swift */; };
+		FA9C3FA12AD6346600BAAC23 /* UserBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C3FA02AD6346600BAAC23 /* UserBioViewController.swift */; };
+		FAEE70A92AD790C600FC4850 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE70A82AD790C600FC4850 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		FA9C3F902AD247D000BAAC23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9C3F922AD247D000BAAC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9C3F982AD2607600BAAC23 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FA9C3F9A2AD5EC2F00BAAC23 /* InformationTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTabBarController.swift; sourceTree = "<group>"; };
+		FA9C3F9C2AD62DF700BAAC23 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		FA9C3F9E2AD6345300BAAC23 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		FA9C3FA02AD6346600BAAC23 /* UserBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBioViewController.swift; sourceTree = "<group>"; };
+		FAEE70A82AD790C600FC4850 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +72,14 @@
 				FA9C3F862AD247CF00BAAC23 /* SceneDelegate.swift */,
 				FA9C3F882AD247CF00BAAC23 /* LogInViewController.swift */,
 				FA9C3F982AD2607600BAAC23 /* WelcomeViewController.swift */,
+				FA9C3F9A2AD5EC2F00BAAC23 /* InformationTabBarController.swift */,
+				FA9C3F9E2AD6345300BAAC23 /* UserInfoViewController.swift */,
+				FAEE70A82AD790C600FC4850 /* MainNavigationController.swift */,
+				FA9C3FA02AD6346600BAAC23 /* UserBioViewController.swift */,
+				FA9C3F9C2AD62DF700BAAC23 /* userModel.swift */,
 				FA9C3F8A2AD247CF00BAAC23 /* Main.storyboard */,
-				FA9C3F8D2AD247D000BAAC23 /* Assets.xcassets */,
 				FA9C3F8F2AD247D000BAAC23 /* LaunchScreen.storyboard */,
+				FA9C3F8D2AD247D000BAAC23 /* Assets.xcassets */,
 				FA9C3F922AD247D000BAAC23 /* Info.plist */,
 			);
 			path = hw5;
@@ -141,9 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEE70A92AD790C600FC4850 /* MainNavigationController.swift in Sources */,
 				FA9C3F892AD247CF00BAAC23 /* LogInViewController.swift in Sources */,
+				FA9C3F9F2AD6345300BAAC23 /* UserInfoViewController.swift in Sources */,
+				FA9C3F9D2AD62DF700BAAC23 /* userModel.swift in Sources */,
 				FA9C3F992AD2607600BAAC23 /* WelcomeViewController.swift in Sources */,
 				FA9C3F852AD247CF00BAAC23 /* AppDelegate.swift in Sources */,
+				FA9C3F9B2AD5EC2F00BAAC23 /* InformationTabBarController.swift in Sources */,
+				FA9C3FA12AD6346600BAAC23 /* UserBioViewController.swift in Sources */,
 				FA9C3F872AD247CF00BAAC23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
