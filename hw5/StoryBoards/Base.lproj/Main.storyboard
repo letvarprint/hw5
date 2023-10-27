@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -254,10 +254,10 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4aW-FE-c81">
-                                <rect key="frame" x="-85" y="113" width="600" height="128"/>
+                                <rect key="frame" x="165" y="113" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="POW-YS-WtF"/>
-                                    <constraint firstAttribute="width" constant="600" id="bIH-dc-sBf"/>
+                                    <constraint firstAttribute="width" constant="100" id="2IB-Ah-ua1"/>
+                                    <constraint firstAttribute="height" constant="100" id="Qec-Gr-QLy"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -275,14 +275,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tim Cook" id="jsb-ya-ctC">
                         <rightBarButtonItems>
-                            <barButtonItem id="kyy-4y-BZk">
-                                <connections>
-                                    <segue destination="4Iv-KP-pSl" kind="show" id="sTs-nf-uU2"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem id="kyy-4y-BZk"/>
                             <barButtonItem title="BIO" id="VjJ-00-JGX">
                                 <connections>
-                                    <segue destination="4Iv-KP-pSl" kind="show" id="340-Ox-fCU"/>
+                                    <segue destination="4Iv-KP-pSl" kind="show" id="uRk-V9-zKY"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -382,9 +378,6 @@
             <point key="canvasLocation" x="2428" y="4"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="340-Ox-fCU"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">

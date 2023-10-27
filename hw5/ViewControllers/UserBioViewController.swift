@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserBioViewController: UIViewController {
+final class UserBioViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
